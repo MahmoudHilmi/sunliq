@@ -1,12 +1,13 @@
-
+import Header from './components/Header'
 import './App.css'
 
 function App() {
  
   return (
     <div className='bg-blue-500 w-screen h-screen'>
+      <Header />
 
-      <h1 className='font-black text-5xl'>Hello Sunliq</h1>
+
  
     </div>
   )
