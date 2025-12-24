@@ -1,11 +1,13 @@
-import Header from './components/Header'
+import Navbar from "./components/Header"
 import './App.css'
 
 function App() {
  
   return (
-    <div className='bg-blue-500 w-screen h-screen'>
-      <Header />
+    <div className=' w-screen h-screen'>
+
+      <Navbar />
+
 
 
  

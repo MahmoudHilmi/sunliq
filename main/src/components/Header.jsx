@@ -1,26 +1,32 @@
-export default function Header() {
-  const navItems = [
-    { name: "Home", link: "#home" },
-    { name: "How It Works", link: "#how" },
-    { name: "Impact", link: "#impact" },
-    { name: "Contact", link: "#contact" },
+export default function Navbar() {
+  const navLinks = [
+    { label: "How it Works" },
+    { label: "Impact" },
+    { label: "Devices" },
+    { label: "docs" },
+    { label: "Pricing" },
   ];
 
   return (
-    <header className="w-screen h-16  flex items-center justify-between">
-      <div className="w-full h-full"></div>
-      <div className="w-full h-full">
-        <ul className="flex items-center justify-between">
+    <header className="    ">
+      <nav className="">
+        <img src="/logo-white.PNG" className="w-15 h-15 m-3" alt="sunliq" />
 
-            {navItems.map((item) => (
-              <li key={item.link}>
-                <a href={item.link} className="text-[#eee]">{item.name}</a>
-              </li>
-            ))}
-
+        <ul className="">
+          {navLinks.map((link) => (
+            <li key={link.label}>
+              <a href={link.label}> {link.label}</a>
+            </li>
+          ))}
         </ul>
-      </div>
-      <div className="w-full h-full"></div>
+
+        <div className="flex-center gap-3">
+          <button className="bg-[#25D366] flex items-center gap-2 justify-center rounded-3xl p-1.5 w-34 text-white cursor-pointer hover:text-white">
+            <img src="./whatsapp.svg" alt="whatsapp" className="size-5" />
+            <span className="text-black">whatsapp</span>
+          </button>
+        </div>
+      </nav>
     </header>
   );
 }
