@@ -1,5 +1,6 @@
-import Navbar from "./components/Header"
 import './App.css'
+import Navbar from "./components/Header"
+import Hero from "./components/Hero"
 
 function App() {
  
@@ -7,6 +8,8 @@ function App() {
     <div className=' w-screen h-screen'>
 
       <Navbar />
+
+      <Hero />
 
 
 
